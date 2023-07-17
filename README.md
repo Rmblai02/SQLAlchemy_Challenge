@@ -4,7 +4,7 @@
 ## Instructions
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii. To help with your trip planning, you decide to do a climate analysis about the area. The following sections outline the steps that you need to take to accomplish this task.
 
-Part 1: Analyze and Explore the Climate Data
+### Part 1: Analyze and Explore the Climate Data
 In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
 
 
@@ -27,7 +27,7 @@ Perform a precipitation analysis and then a station analysis by completing the s
 
 
 
-Precipitation Analysis
+### Precipitation Analysis
 
 
 Find the most recent date in the dataset.
@@ -99,7 +99,7 @@ Close your session.
 
 
 
-Part 2: Design Your Climate App
+## Part 2: Design Your Climate App
 Now that you’ve completed your initial analysis, you’ll design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
 
 
@@ -114,7 +114,7 @@ List all the available routes.
 
 
 
-/api/v1.0/precipitation
+### /api/v1.0/precipitation
 
 
 Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
@@ -125,13 +125,13 @@ Return the JSON representation of your dictionary.
 
 
 
-/api/v1.0/stations
+### /api/v1.0/stations
 
 Return a JSON list of stations from the dataset.
 
 
 
-/api/v1.0/tobs
+### /api/v1.0/tobs
 
 
 Query the dates and temperature observations of the most-active station for the previous year of data.
@@ -142,7 +142,7 @@ Return a JSON list of temperature observations for the previous year.
 
 
 
-/api/v1.0/<start> and /api/v1.0/<start>/<end>
+### /api/v1.0/<start> and /api/v1.0/<start>/<end>
 
 
 Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
