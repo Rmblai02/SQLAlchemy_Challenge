@@ -12,12 +12,12 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
 
 # reflect an existing database into a new model
 Base= automap_base()
 # reflect the tables
-Base.prepare(engine, reflect=True)
+Base.prepare(autoload_with=engine)
 
 # Save references to each table
 Measurement = Base.classes.measurement
